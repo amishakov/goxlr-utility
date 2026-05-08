@@ -43,8 +43,8 @@ the
 * Windows users can also aquire the GoXLR Utility via `winget`
 
 <sup>1</sup> Windows requires the official device drivers provided by TC-Helicon. If you have the official app
-installed you don't need to do anything, otherwise download the latest drivers from TC-Helicon's
-website [here](https://cdn.mediavalet.com/aunsw/musictribe/ABweYC9l6k6YDIo7GuJKtA/CRPSsxjjrESY-UT1RCEygw/Original/TC-Helicon_GoXLR_Driver.zip).
+installed you don't need to do anything, otherwise download the latest drivers from 
+[here](https://utility.frostycoolslug.com/update-site/drivers/TC-Helicon_GoXLR_Driver_5.57.zip).
 
 
 <sup>2</sup> MacOS support is still somewhat experimental, and the package may conflict with the existing
