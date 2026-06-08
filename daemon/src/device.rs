@@ -2621,7 +2621,7 @@ impl<'a> Device<'a> {
                 self.stop_sample_playback(bank, button).await?;
                 self.update_button_states()?;
             }
-
+            
             GoXLRCommand::SetScribbleIcon(fader, icon) => {
                 self.profile.set_scribble_icon(fader, icon);
                 self.apply_scribble(fader).await?;
@@ -2957,6 +2957,7 @@ impl<'a> Device<'a> {
             GoXLRCommand::SetActiveSamplerBank(bank) => {
                 self.load_sample_bank(bank).await?;
                 self.load_colour_map().await?;
+                self.update_button_states()?;
             }
             GoXLRCommand::SetMegaphoneEnabled(enabled) => {
                 self.set_megaphone(enabled).await?;
