@@ -958,7 +958,7 @@ pub async fn run_cli() -> Result<()> {
                             .await
                             .context("Unable to set Stop Percent")?;
                     }
-                    SamplerCommands::SetActiveSamplerBank { preset } => {
+                    SamplerCommands::SetActiveBank { preset } => {
                         client
                             .command(&serial, GoXLRCommand::SetActiveSamplerBank(*preset))
                             .await

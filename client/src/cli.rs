@@ -1143,7 +1143,7 @@ pub enum SamplerCommands {
         stop_position: f32,
     },
     
-    SetActiveSamplerBank {
+    SetActiveBank {
         #[arg(value_enum)]
         preset: SampleBank,
     },
