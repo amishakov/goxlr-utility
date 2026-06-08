@@ -958,6 +958,12 @@ pub async fn run_cli() -> Result<()> {
                             .await
                             .context("Unable to set Stop Percent")?;
                     }
+                    SamplerCommands::SetActiveBank { preset } => {
+                        client
+                            .command(&serial, GoXLRCommand::SetActiveSamplerBank(*preset))
+                            .await
+                            .context("Unable to set Active Bank")?;
+                    }
                 },
                 SubCommands::Submix { command } => match command {
                     SubmixCommands::Enabled { enabled } => {

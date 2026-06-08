@@ -2957,6 +2957,7 @@ impl<'a> Device<'a> {
             GoXLRCommand::SetActiveSamplerBank(bank) => {
                 self.load_sample_bank(bank).await?;
                 self.load_colour_map().await?;
+                self.update_button_states()?;
             }
             GoXLRCommand::SetMegaphoneEnabled(enabled) => {
                 self.set_megaphone(enabled).await?;
