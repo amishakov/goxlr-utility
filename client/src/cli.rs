@@ -1142,7 +1142,7 @@ pub enum SamplerCommands {
         #[arg(value_parser=percent_value_float)]
         stop_position: f32,
     },
-    
+
     SetActiveBank {
         #[arg(value_enum)]
         preset: SampleBank,

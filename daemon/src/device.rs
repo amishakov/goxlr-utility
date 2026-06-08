@@ -2621,7 +2621,7 @@ impl<'a> Device<'a> {
                 self.stop_sample_playback(bank, button).await?;
                 self.update_button_states()?;
             }
-            
+
             GoXLRCommand::SetScribbleIcon(fader, icon) => {
                 self.profile.set_scribble_icon(fader, icon);
                 self.apply_scribble(fader).await?;
